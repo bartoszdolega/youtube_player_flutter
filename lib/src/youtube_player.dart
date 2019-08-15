@@ -180,7 +180,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
 
   @override
   void initState() {
-    print('############## forked YtPlayer: 2 ################');
+    print('############## forked YtPlayer: 33333 ################');
     super.initState();
     _loadController();
     _currentVideoId = widget.videoId;
