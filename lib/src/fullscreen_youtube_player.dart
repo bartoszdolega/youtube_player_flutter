@@ -159,5 +159,9 @@ class __FullScreenYoutubePlayerState extends State<_FullScreenYoutubePlayer> {
   void dispose() {
     SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     super.dispose();
+
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
   }
 }

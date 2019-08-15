@@ -10,6 +10,7 @@ import 'controls.dart';
 import 'progress_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'youtube_player_flags.dart';
+import 'package:flutter/services.dart';
 
 part 'player.dart';
 
@@ -261,6 +262,8 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
     if (!controller.value.isFullScreen && _inFullScreen) {
       _inFullScreen = false;
       Navigator.pop<Duration>(context, controller.value.position);
+
+
     }
     if (mounted) {
       setState(() {});
