@@ -180,7 +180,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
 
   @override
   void initState() {
-    print('############## forked YtPlayer: 1 ################');
+    print('############## forked YtPlayer: 2 ################');
     super.initState();
     _loadController();
     _currentVideoId = widget.videoId;
@@ -622,7 +622,11 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
     }
   }
 
-  void enterFullScreen() => value = value.copyWith(isFullScreen: true);
+  void enterFullScreen() {
+    value = value.copyWith(isFullScreen: true);
+    play();
+  }
 
   void exitFullScreen() => value = value.copyWith(isFullScreen: false);
+
 }
