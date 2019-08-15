@@ -180,7 +180,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
 
   @override
   void initState() {
-    print('############## forked YtPlayer: 33333 ################');
+    print('############## forked YtPlayer: 4444 ################');
     super.initState();
     _loadController();
     _currentVideoId = widget.videoId;
@@ -241,7 +241,8 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
           disableDragSeek: widget.flags.disableDragSeek,
           hideFullScreenButton: widget.flags.hideFullScreenButton,
           showVideoProgressIndicator: false,
-          autoPlay: widget.flags.autoPlay,
+//          autoPlay: widget.flags.autoPlay,
+          autoPlay: controller.value.isPlaying,
           forceHideAnnotation: widget.flags.forceHideAnnotation,
           mute: widget.flags.mute,
           hideControls: widget.flags.hideControls,
