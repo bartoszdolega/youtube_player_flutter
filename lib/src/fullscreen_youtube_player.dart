@@ -148,6 +148,11 @@ class __FullScreenYoutubePlayerState extends State<_FullScreenYoutubePlayer> {
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays([]);
+
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeRight,
+      DeviceOrientation.landscapeLeft,
+    ]);
   }
 
   @override
