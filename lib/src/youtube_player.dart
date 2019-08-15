@@ -624,7 +624,7 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
 
   void enterFullScreen() {
     value = value.copyWith(isFullScreen: true);
-    play();
+    pause();
   }
 
   void exitFullScreen() => value = value.copyWith(isFullScreen: false);
