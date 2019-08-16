@@ -262,6 +262,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
     if (!controller.value.isFullScreen && _inFullScreen) {
       _inFullScreen = false;
       Navigator.pop<Duration>(context, controller.value.position);
+      print('########position########## ${controller.value.position}');
 
 
     }
